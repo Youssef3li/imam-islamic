@@ -11,8 +11,10 @@ SECRET_KEY = "django-insecure-v+q+n2-1ip3)xi@pf=cfou0!426tj=s6es0ty7v6_-_7udfv$*
 
 # True False
 
-DEBUG = True
-ALLOWED_HOSTS = []  # عدلهم بدومينك أو آي بي السيرفر
+DEBUG = False
+ALLOWED_HOSTS = ['*']  # عدلهم بدومينك أو آي بي السيرفر
+ALLOWED_HOSTS = ['.onrender.com']
+
 
 # ALLOWED_HOSTS = ["yourdomain.com", "www.yourdomain.com", "your-server-ip"]  # عدلهم بدومينك أو آي بي السيرفر
 
