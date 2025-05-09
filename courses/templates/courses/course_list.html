@@ -1,0 +1,300 @@
+<!-- =========
+
+	Template Name: موقع الامام الاسلامي
+	Author: يوسف ياسين عبد الرحيم
+	Author URI: https://www.facebook.com/YoussefYassinAli
+	Support: https://www.facebook.com/YoussefYassinAli
+	Version: 1.1
+
+========== -->
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي</title>
+
+    <!--====== Favicon Icon ======-->
+    <link
+    rel="shortcut icon"
+    href="/assets/images/logo/icon.png"
+    type="image/svg"
+  />
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/lineicons.css" />
+    <link rel="stylesheet" href="/assets/css/ud-styles.css" />
+
+
+  </head>
+
+  <body dir="rtl">
+    <!-- ====== Header Start ====== -->
+    
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-banner-content">
+              <h1>الدورات والبرامج التعليمية</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+
+ <!-- ====== Blog Start ====== -->
+
+<!-- course_list.html -->
+<section class="ud-blog-grids">
+  <div class="container">
+    <div class="row">
+      {% for course in courses %}
+        <div class="col-lg-4 col-md-6">
+          <div class="card-wrapper">
+            <ul class="card-list">
+              <li class="card-item">
+                <div class="card-link">
+                  <img src="{{ course.image.url }}" alt="card-image" class="card-image">
+                  <p class="badge">عدد الحلقات {{ course.episode_count }}</p>
+                  <h3 class="card-title">{{ course.title }}</h3>
+                  <p>{{ course.description|truncatewords:20 }}</p>
+                  <a href="{% url 'course_detail' course.id %}" class="card-button">عرض حلقات البرنامج</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+
+
+ <section class="ud-blog-grids">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+        
+              <div class="card-wrapper">
+                <ul class="card-list">
+                  <li class="card-item">
+                    <div class="card-link">
+                      <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                      <p class="badge">عدد الحلقات 25</p>
+                      <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                      <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                      <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            
+                  </div>
+
+                  
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            
+      <div class="col-lg-4 col-md-6">
+        
+        <div class="card-wrapper">
+          <ul class="card-list">
+            <li class="card-item">
+              <div class="card-link">
+                <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                <p class="badge">عدد الحلقات 25</p>
+                <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+        
+              <div class="card-wrapper">
+                <ul class="card-list">
+                  <li class="card-item">
+                    <div class="card-link">
+                      <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+                      <p class="badge">عدد الحلقات 25</p>
+                      <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+                      <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+                      <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            
+                  </div>
+                  
+
+<!--  
+  <div class="card-wrapper">
+    <ul class="card-list">
+      <li class="card-item">
+        <div class="card-link">
+          <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+          <p class="badge">عدد الحلقات 25</p>
+          <h3 class="card-title">الامام الاسلامي الامام الاسلامي</h3>
+          <p>الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف الوصف</p>
+          <a href="program-episodes.html" class="card-button">عرض حلقات البرنامج</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+ -->
+
+
+
+
+
+
+
+
+</section>
+<!-- ====== Blog End ====== -->
+
+
+
+    <!-- ====== Footer Start ====== -->
+    
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

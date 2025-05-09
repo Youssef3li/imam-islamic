@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>البث المباشر - الإمام الإسلامي</title>
+    <link rel="stylesheet" href="path-to-your-styles.css" />
+  </head>
+  <body dir="rtl">
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="index.html">
+            <img src="/assets/images/logo/لوجو (1).png" alt="Logo" />
+          </a>
+          <button class="navbar-toggler">
+            <span class="toggler-icon"> </span>
+            <span class="toggler-icon"> </span>
+            <span class="toggler-icon"> </span>
+          </button>
+          <div class="navbar-collapse">
+            <ul id="nav" class="navbar-nav mx-auto">
+              <li class="nav-item"><a href="index.html">الرئيسية</a></li>
+              <li class="nav-item"><a href="about.html">من نحن</a></li>
+              <li class="nav-item"><a href="services.html">خدمات الطلاب</a></li>
+              <!-- Add other navigation items here -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-banner-content">
+              <h1>🎥 البث المباشر</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+
+    <!-- ====== Live Stream Section Start ====== -->
+    <section class="ud-live-stream">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Video Embed (YouTube or Facebook) -->
+            <div class="ud-video-container">
+              <iframe
+                src="https://www.youtube.com/embed/your_video_id" <!-- هنا حط رابط البث -->
+                width="100%"
+                height="480"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comments Section (Disqus) -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="disqus_thread"></div>
+            <script>
+              (function() {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://your-site.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+          </div>
+        </div>
+
+        <!-- Live Chat Section (Tawk.to) -->
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Add the Tawk.to widget here -->
+            <script type="text/javascript">
+              var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+              (function() {
+                var s1 = document.createElement("script"),
+                  s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/your_tawk_id/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+              })();
+            </script>
+          </div>
+        </div>
+
+        <!-- Call to Action Button -->
+        <div class="row">
+          <div class="col-lg-12">
+            <a href="your-link-here" class="ud-main-btn">انتقل إلى صفحة التسجيل</a> <!-- أو أي رابط آخر -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Live Stream Section End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p>جميع الحقوق محفوظة للإمام الإسلامي</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="path-to-your-scripts.js"></script>
+  </body>
+</html>

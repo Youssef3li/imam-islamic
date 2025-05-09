@@ -1,0 +1,1818 @@
+<!-- =========
+
+	Template Name: موقع الامام الاسلامي
+	Author: يوسف ياسين عبد الرحيم
+	Author URI: https://www.facebook.com/YoussefYassinAli
+	Support: https://www.facebook.com/YoussefYassinAli
+	Version: 1.1
+
+========== -->
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي</title>
+    <meta name="description" content="موقع الإمام الإسلامي يقدم لكم مقالات ودروس في الدين الإسلامي والتوجيهات الروحية. تابعنا للحصول على المعرفة القيمة." />
+    <meta name="keywords" content="علوم القران,الاحتفالات,القران الكريم,الإمام الإسلامي, دروس دينية, المعرفة الإسلامية, توجيه روحي, مقالات إسلامية" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+
+    <!-- Primary Meta Tags -->
+<meta name="title" content="الإمام الإسلامي">
+<meta name="description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:title" content="الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي">
+<meta property="og:description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="">
+<meta property="twitter:title" content="الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي">
+<meta property="twitter:description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+<meta property="twitter:image" content="">
+
+    <!--====== Favicon Icon ======-->
+    <link
+      rel="shortcut icon"
+      href="/assets/images/logo/icon.png"
+      type="image/svg"
+    />
+<!-- سليدر  -->
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/lineicons.css" />
+    <link rel="stylesheet" href="assets/css/ud-styles.css" />
+  </head>
+  <body dir="rtl">
+    <!-- ====== Header Start ====== -->
+    <header style="height: 70px;" class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#home">
+                <img src="/assets/images/logo/لوجو (1).png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home">الرئيسية</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#about">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#pricing">الفعاليات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#latest-news">اخر الاخبار</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#contact">تواصل معنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'student_services' %}">خدمات الطلاب</a>
+                  </li>
+                  
+                    <li class="nav-item nav-item-has-children">
+                      <a href="javascript:void(0)"  onclick="returnfalse"> الصفحات </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">
+                           من نحن
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">
+                          التقديم في المركز
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">
+                          تواصل معنا
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'blog' %}" class="ud-submenu-link">
+                           المدونة
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">
+                          فيديو
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">
+                           
+                           منصة التعليم الالكتروني
+                        </a>
+                      </li>
+                      <!-- <li class="ud-submenu-item">
+                        <a href="404.html" class="ud-submenu-link">الصفحة 404</a>
+                      </li> -->
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'login' %}" class="ud-submenu-link">تسجيل الدخول</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div  class="navbar-btn d-none d-sm-inline-block">
+                
+                <a href="{% url 'login' %}"><img style="width: 30px; border-radius: 50%;" src="/assets/images/رمزية.png" alt="000"></a>
+                <a href="{% url 'login' %}" class="ud-main-btn ud-login-btn">
+                  <!-- تسجيل الدخول --> دخـول
+                </a>
+              </div>
+              
+            </nav>
+           
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    
+    </header>
+    <!-- ====== Header End ====== -->
+<!-- <div class="live">
+  <a class="live-link href=""><img src="" alt="Live"></a>
+</div> -->
+    <div class="ud-goo1">
+      
+      <a id="bt2" href="{% url 'donate' %}">تبــرع <img src="/assets/images/linkedin_icon.png" alt=""></a>
+      <a id="bt3" href="{% url 'donate' %}">تطــوع <img src="/assets/images/linkedin_icon.png" alt=""></a>
+    </div> 
+
+
+    <!-- ====== Hero Start ====== -->
+    <section class="ud-hero" id="home">
+      
+
+      <!-- <div>
+    
+        <div class="ud-menu">
+          <ul>
+            <li>
+              <a href="##">مكتبة الفديوهات</a>
+            </li>
+            <li>
+              <a href="##">بث مباشر </a>
+            </li>
+            <li>
+              <a href="##">مكتبة الصور</a>
+            </li>
+          </ul>
+         </div>
+      </div> -->
+
+      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-hero-content wow fadeInUp" data-wow-delay=".2s">
+             
+              <h1 class="ud-hero-title">
+                مـوقـع الإمـام الإسلامـي
+              </h1>
+              <p class="ud-hero-desc">
+                
+ مرحبًا بكم في موقع الإمام الإسلامي للقرآن الكريم وعلومة 
+نسعى لغرس حب كتاب الله في القلوب من خلال برامج تعليمية متقنة لتحفيظ القرآن الكريم وتصحيح التلاوة وفق أحكام التجويد.
+معنا ستجد بيئة إيمانية محفزة ودروسًا تفاعلية بإشراف نخبة من المعلمين المتخصصين.
+انضم إلينا وابدأ رحلتك المباركة في حفظ كتاب الله!
+              </p>
+              <ul class="ud-hero-buttons">
+                <li>
+                  <a href="" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-white-btn">
+                    
+انضم إلينا
+                  </a>
+                </li>
+                <li>
+                  <a href="" rel="nofollow noopener" target="_blank" class="ud-main-btn ud-link-btn">
+                    اعرف اكثر <i class="lni lni-arrow-right"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- صورة الصفحة الرئيسية -->
+            <div
+            
+              class="ud-hero-brands-wrapper wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <img src="/assets/images/hero/brand.png" alt="brand" />
+            </div>
+            <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
+              {% if image %}
+              <img src="{{ image.image.url }}" alt="صورة الصفحة الرئيسية" />
+          {% else %}
+              <p>لا توجد صورة حالياً للصفحة الرئيسية.</p>
+          {% endif %}
+          
+           <!-- <img src="/assets/images/hero/vv.jpg" alt="hero-image" /> -->
+              <img
+                src="/assets/images/hero/"
+                alt="shape"
+                class="shape shape-1"
+              />
+              <img
+                src="/assets/images/hero/dotted-shape.svg"
+                alt="shape"
+                class="shape shape-2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Hero End ====== -->
+
+
+    <!-- ====== 00000000 ====== -->
+
+    <!-- ====== 00000000 ====== -->
+
+
+
+
+    <!-- ====== ازرار الهوم البداية====== -->
+
+ <section>
+<div id="btn-home1" class="container" style="margin: auto; padding: 15px; text-align: center; max-width: 90%;">
+  <div id="btn-home2" class="row">
+    <div id="btn-home3" class="col-12 col-md-4 mx-auto align-items-center justify-content-center m-2">
+      
+      <a id="btn-home5" href="#">مسابقات الامام</a>
+    </div>
+    <div class="col-12 col-md-4 mx-auto align-items-center justify-content-center m-2">
+     
+      <a id="btn-home5" href="#">سرد القران</a>
+    </div>
+    <div class="col-12 col-md-4 mx-auto align-items-center justify-content-center m-2">
+     
+      <a id="btn-home5" href="#">شهر رمضان</a>
+    </div>
+  </div>
+</div>
+    </section>  
+
+    <!-- ====== ازرار الهوم النهاية====== -->
+
+
+
+
+
+
+    <section id="team" class="team-wrapper wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-5">
+            <h3>Our Dentists</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team-img">
+                <img src="images/team/team1.png" class="img-fluid">
+              </div>
+              <div class="team-info pt-4 text-center">
+                <h5>Darry Millin</h5>
+                <p>oral Surgeon</p>
+                <ul class="social-network">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team-img">
+                <img src="images/team/team1.png" class="img-fluid">
+              </div>
+              <div class="team-info pt-4 text-center">
+                <h5>Muhammad Shan</h5>
+                <p>oral Surgeon</p>
+                <ul class="social-network">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 mb-4">
+            <div class="card rounded-3">
+              <div class="team-img">
+                <img src="images/team/team1.png" class="img-fluid">
+              </div>
+              <div class="team-info pt-4 text-center">
+                <h5>Usama Ahmed</h5>
+                <p>Oral Surgeon</p>
+                <ul class="social-network">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                  <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    
+
+
+
+
+    <!-- ====== الفروع Start ====== -->
+    <section id="features" class="ud-features">
+      <div  class="container">
+        <div style="padding: 5px; position: relative; bottom: 50px; position: relative; top: 50px;">
+          <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;"> فروع الامام</h2>
+          <p style=" position: relative; right: 15px;">في إطار سعيه لتوسيع نطاق خدماته، قرر المركز فتح عدة فروع جديدة في مختلف المناطق لتقديم دورات تحفيظ القرآن الكريم لجميع الأعمار والمستويات.
+            <br> يسعى المركز من خلال هذه الفروع إلى توفير بيئة تعليمية متميزة تركز على تطوير مهارات الحفظ والتلاوة</p>
+    </div>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-sm-6">
+            </div>
+          </div>
+          <div class="container">
+            <div class="row justify-content-center align-items-center ">
+
+              <div style="position: relative; top: 100px;" class="ud-single-feature wow fadeInUp" data-wow-delay=".1s">
+                <div class="ud-feature-icon">
+                  <i class="fa-solid fa-map-location"></i>
+                </div>
+                <div class="ud-feature-content" class="col-md-6 mx-auto">
+                  <h3 class="ud-feature-title">جمهورية مصر العربية</h3>
+                    Lorem Ipsum is simply dummy text of the printing and industry.
+                  </p>
+  
+                  <a href="javascript:void(0)" class="ud-feature-link">
+                    Learn More
+                  </a>
+                </div>
+              </div>
+
+              
+              <div class="col-md-6 mx-auto  bg-dark text-center ">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum repellendus, magni neque deserunt nobis tempora voluptatem veniam laudantium dolores maxime!
+                </div>
+                <div style=" border: 2px dotted rgb(11, 138, 22); width: 350px; box-shadow: 20px 20px 20px rgba(0.5, 0.5, 0.5, 0.05); " class="col-md-6 mx-auto "><img src="/assets/images/logoo (11).jpg" alt="شيخ عاصم">
+                  <div style=" text-align: center;">
+                    <h5>دكتور: عاصم احمد عبد الكريم</h5>
+                    <h6>رئيس مجلس الادارة</h6>
+                    <p></p>
+                  </div>
+                </div>
+
+            </div>
+
+
+          </div>
+
+
+    </section>
+    <!-- ====== Features End ====== -->
+
+    <!-- ====== About Start ====== -->
+    <section id="about" class="ud-about">
+      <div class="container">
+        <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <div class="ud-about-content-wrapper">
+            <div class="ud-about-content">
+              <span class="tag">معلومات عنا</span>
+              <h2> الإمام الإسلامي للقرآن الكريم وعلومة </h2>
+              <p>
+                مؤسسة الإمام الإسلامي للقرآن الكريم هي مؤسسة تعليمية تهدف إلى نشر وتعليم القرآن الكريم وتفسيره وفقًا للأسس الصحيحة، 
+                <br>
+                مع تقديم برامج متخصصة في حفظ القرآن الكريم، التجويد، الحديث الشريف،
+                <br> 
+                بالإضافة إلى تنظيم المسابقات و الاحتفالات الكبرى التي تهدف إلى تحفيز المجتمع على التفاعل مع كتاب الله والسنة النبوية.
+                <br>
+
+                <h5>رسالتنا</h5>
+                نسعى من خلال برامجنا التعليمية إلى تعزيز فهم القرآن الكريم وتطبيقه في حياة المسلمين اليومية. نحن ملتزمون بتوفير بيئة تعليمية ملهمة ومحفزة، تساهم في بناء 
+                جيل جديد على أسس إيمانية سليمة، من خلال دروس القرآن الكريم والتفسير، وتعلم أحكام التجويد.
+                <br>
+                
+                <h5>ما نقدمه</h5>
+                <br>
+                <span>حفظ القرآن الكريم:</span>
+                <br>
+                نقدم برامج متميزة لحفظ القرآن الكريم، تستهدف جميع الأعمار والفئات.
+                 نوفر أساليب حديثة في الحفظ والتكرار لضمان حفظ القرآن الكريم بشكل دقيق وميسر.
+                <br>
+                <span>تفسير القرآن الكريم:</span>
+                <br>
+                نقوم بتعليم تفسير القرآن الكريم وتوضيح معاني الآيات الكريمة وتفسيرها حسب ما ورد عن العلماء والفقهاء الكبار.
+                 نهدف من خلال هذه الدروس إلى فهم أعمق للقرآن الكريم وتطبيقه في حياتنا اليومية.
+                <br>
+                <span>الحديث الشريف:</span>
+                <br>
+                نهتم أيضًا بتعليم الحديث النبوي الشريف، وتوضيح معانيه وأحكامه.
+                 نغرس في قلوب طلابنا أهمية الحديث الشريف في توجيه حياتهم الشخصية والعملية.
+                <br>
+                <span>أحكام التجويد:</span>
+                <br>
+                نركز على تعليم أحكام التجويد بشكل احترافي، لضمان قراءة القرآن الكريم بشكل صحيح، واتباع قواعد النطق السليم للأحرف.
+                <br>
+                <span>المسابقات القرآنية:</span>
+                <br>
+                نقوم بتنظيم مسابقات قرآنية سنوية تهدف إلى تحفيز الأفراد على تعلم وحفظ القرآن الكريم. 
+                هذه المسابقات تشجع على المنافسة الشريفة وتساهم في نشر الثقافة القرآنية.
+                <br>
+                <span>الحفلات الكبرى:</span>
+                <br>
+                نحرص على تنظيم حفلات تكريمية في نهاية كل برنامج أو مسابقة قرآنية، حيث نقوم بتكريم الحفظة والمتميزين في المجالات القرآنية المختلفة. 
+                هذه الحفلات تعد فرصة رائعة للاحتفال بالإنجازات القرآنية وتشجيع المشاركين على الاستمرار في التعلم والتطور.
+                <br>
+              </p>
+                <h5>أهدافنا</h5>
+                <p>
+                  نشر علم القرآن الكريم وتعليمه لجميع الفئات العمرية.
+                  تعزيز الفهم الصحيح للقرآن الكريم وأحكامه.
+                  تشجيع الشباب على التمسك بالقرآن الكريم والسنة النبوية.
+                  بناء جيل قادر على قراءة القرآن الكريم بتجويد صحيح وبدون أخطاء.
+                  دعم الأنشطة القرآنية من خلال المسابقات والاحتفالات التي تعزز الروح القرآنية في المجتمع.
+                   </p>
+                
+              <a style="border-radius: 20px; width: 150px;" href="javascript:void(0)" class="ud-main-btn">
+                اعرف اكثر</a>
+            </div>
+          </div>
+          <div class="ud-about-image">
+            <img src="/assets/images/about/about-image.png" alt="about-image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About End ====== -->
+
+    <!-- ====== Pricing Start ====== -->
+    <section id="pricing" class="ud-pricing">
+      <div class="container">
+        <div style="padding: 5px; position: relative; bottom: 50px;">
+            
+          <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;"> فاعليات حفل التخرج</h2>
+          <p style=" position: relative; right: 15px;">يتم تنظيم حفل تخرج لطلاب الختام الخريجين من مدرسة الامام الاسلامي كل عام </p>
+          <div style="border-radius: 20px; background: #0f5132;" class="btn btn-primary">يمكنك مشاهدة وتحميل الالبومات من هنا</div>
+          
+    </div>
+ 
+
+
+        
+<!-- بداية السلايدر -->
+
+
+        
+<!-- بداية السلايدر -->
+<section">
+<div style="width: 100%; margin: auto; box-shadow: 0 10px 10px rgba(0.5, 0.5, 0.5, 0.05);" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div id="slid1" class="carousel-inner">
+    {% for slider in sliders %}
+      <div id="slid-item" class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img style="border-radius: 8px;" src="{{ slider.image.url }}" class="d-block w-100" alt="{{ slider.title }}">
+        <div style="width: 30%;" class="carousel-caption d-none d-md-block">
+          <h5>{{ slider.title }}</h5>
+          <p>{{ slider.description }}</p>
+          {% if slider.link %}
+            <a href="{{ slider.link }}" class="btn btn-primary">اقرأ المزيد</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">السابق</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">التالي</span>
+  </button>
+</div>
+</section>
+<!-- نهاية السليدر -->
+
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing End ====== -->
+
+    <section class="k12-section">
+      <div class="content-container">
+        <div class="k12-title">
+          <div class="title-section">
+          
+            <div  class="container">
+              <div">
+                <h2 style="position: relative;left: 25px; padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;">التعليم الالكتروني</h2>
+                <p >تعلم وتمرن على مواد التعليم المدرسي وفقًا للمناهج الوطنية (أكثر من 1500 فيديو و 15,000 سؤال)</p>
+          </div>
+          </div>
+        </div>
+        <div class="k12-drawing-container">
+          <div class="k12-drawing">
+            <div class="k12-image">
+              <img alt="K12" src="/assets/e427e8539d92d9026baa5ce2625a1a2d.svg" loading="lazy">
+            </div>
+            <div class="k12-content">
+              <h2>التعليم الالكتروني</h2>
+              <p>اكتسب المعرفة، تابع تقدمك، واستمتع بالتعلم!</p>
+              <a class="up-btn-i" href="/k12/" class="cta-button white">ابدأ التعلم</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ====== FAQ Start ====== -->
+    <section id="faq" class="ud-faq">
+      <div class="shape">
+        <img style="opacity: .2;" src="/assets/222221.png" alt="shape" />
+      </div>
+      <div class="container">
+        <div class="container">
+          <div style="padding: 5px; position: relative; bottom: 50px;">
+              
+            <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;"> القبول والتقديم  في المركز</h2>
+            <p style=" position: relative; right: 15px;">Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic
+              Imam Islamic Imam Islamic Imam Islamic
+               Imam Islamic Imam Islamic Imam Islamic Imam</p>
+            <div class="btn btn-primary"> من هنا</div>
+            
+      </div>
+       
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".1s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Islamic Imam Islamic Imam Islamic</span>
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    <p>
+                      Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic
+                       Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic
+                        Imam Islamic Imam Islamic Imam Islamic
+                         Imam Islamic Imam Islamic Imam Islamic Imam
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="ud-single-faq wow fadeInUp" data-wow-delay=".15s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>Islamic Imam Islamic Imam Islamic</span>
+                </button>
+                <div id="collapseTwo" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    <p>
+                      Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic
+                       Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic Imam Islamic
+                        Imam Islamic Imam Islamic Imam Islamic
+                         Imam Islamic Imam Islamic Imam Islamic Imam
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>الدورة العلمية</span>
+                </button>
+                <div  id="collapseThree" class="accordion-collapse collapse">
+                  <div style="display: flex; justify-content: center; align-items: center;" class="ud-faq-body">
+                    <p>
+                      نموذج تقديم الدورة العلمية
+                      </p>
+                      <div>
+                        <label for="##">الاسم</label>
+                        <input type="text">
+                        <label for="##">الفرع</label>
+                        <input type="text">
+                        <label for="##">الاسم</label>
+                        <input type="text">
+                        <input type="file">
+                        
+                        <button type="submit">ارسال</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+            
+            <div class="ud-single-faq wow fadeInUp" data-wow-delay=".2s">
+              <div class="accordion">
+                <button
+                  class="ud-faq-btn collapsed"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix"
+                >
+                  <span class="icon flex-shrink-0">
+                    <i class="lni lni-chevron-down"></i>
+                  </span>
+                  <span>طلاب جدد</span>
+                </button>
+                <div id="collapseSix" class="accordion-collapse collapse">
+                  <div class="ud-faq-body">
+                    <p>
+                      نموذج تقديم
+                      </p>
+                      <div>
+                        <label for="##">الاسم</label>
+                        <input type="text">
+                        <label for="##">الفرع</label>
+                        <input type="text">
+                        <label for="##">الاسم</label>
+                        <input type="text">
+                        <input type="file">
+                        
+                        <button type="submit">ارسال</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== FAQ End ====== -->
+   
+    <!-- ====== الدورات والبرامج البداية ====== -->
+    <section id="testimonials" class="ud-testimonials">
+
+
+
+
+      
+      <div class="container">
+        <div style="padding: 5px; position: relative; bottom: 50px;">
+            
+          <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;"> الــدوارات</h2>
+          <p style=" position: relative; right: 15px;">برامج تعليمية يقدمها مركز الامام الاسلامي</p>
+          <p>
+            There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration in some form.
+          </p>
+    </div>
+       
+
+
+<div class="row" >
+
+<!-- كارت الدورة -->
+<!-- 
+  <div class="col-xl-3 col-lg-3 col-sm-6" >
+<div style="border-radius: 30px; ;" class="card">
+  <img src="/assets\images\صور الفيديو/صور التدوينة.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    
+<h4 class="card-title">برنامج واحة القرآن</h4>
+<span style="color: #0f5132; font-size: small; border-bottom: #0f5132 solid 0.5px;">20 حلقة</span>
+<p  class="card=text">"واحة القرآن" هو برنامج من مركز الإمام يهدف إلى تعليم علوم القرآن  بطريقة مبسطة وفعّالة.</p>
+  
+   <a style="max-width: 180px;margin: auto; color: #0f5132; border-radius: 30px; border: #0f5132 solid 1px; display: flex; justify-content: center;" href="#"> شاهد حلقات البرنامج</a>
+  </div>
+</div>
+</div> -->
+
+
+{% for course in courses %}
+  <div class="col-xl-3 col-lg-3 col-sm-6">
+    <div style="border-radius: 30px;" class="card">
+      <img src="{{ course.image.url }}" class="card-img-top" alt="{{ course.title }}">
+      <div class="card-body">
+        <h4 class="card-title">{{ course.title }}</h4>
+        <span style="color: #0f5132; font-size: small; border-bottom: #0f5132 solid 0.5px;">
+          {{ course.episodes_count }} حلقة
+        </span>
+        <p class="card-text">{{ course.description|truncatewords:20 }}</p>
+        <a style="max-width: 180px;margin: auto; color: #0f5132; border-radius: 30px; border: #0f5132 solid 1px; display: flex; justify-content: center;"
+           href="{{ course.video_link|default:'#' }}">
+          شاهد حلقات البرنامج
+        </a>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
+
+
+
+
+
+<!-- 
+
+<div class="col-xl-3 col-lg-3 col-sm-6" >
+  <div class="card">
+    <img src="/assets\images\صور الفيديو/صور التدوينة.jpg" class="card-img-top" alt="">
+    <div class="card-body">
+  <h4 class="card-title">برنامج واحة القرآن</h4>
+  <p class="card=text">"واحة القرآن" هو برنامج من مركز الإمام يهدف إلى تعليم القرآن الكريم والتفسير والتجويد بطريقة مبسطة وفعّالة.</p>
+     <div class="btn btn-primary" style="background-color: #0f5132;">شاهد حلقات البرنامج</div>
+    </div>
+  </div>
+  </div>
+  <div class="col-xl-3 col-lg-3 col-sm-6" >
+    <div class="card">
+      <img src="/assets\images\صور الفيديو/صور التدوينة.jpg" class="card-img-top" alt="">
+      <div class="card-body">
+    <h4 class="card-title">برنامج واحة القرآن</h4>
+    <p class="card=text">"واحة القرآن" هو برنامج من مركز الإمام يهدف إلى تعليم القرآن الكريم والتفسير والتجويد بطريقة مبسطة وفعّالة.</p>
+       <div class="btn btn-primary" style="background-color: #0f5132;">شاهد حلقات البرنامج</div>
+      </div>
+    </div>
+    </div>
+    
+<div class="col-xl-3 col-lg-3 col-sm-6" >
+<div class="card">
+  <img src="/assets\images\صور الفيديو/صور التدوينة.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+<h4 class="card-title">برنامج واحة القرآن</h4>
+<p class="card=text">""واحة القرآن" هو برنامج من مركز الإمام يهدف إلى تعليم القرآن الكريم والتفسير والتجويد بطريقة مبسطة وفعّالة."</p>
+   <div class="btn btn-primary" style="background-color: #0f5132;">شاهد حلقات البرنامج</div>
+  </div>
+</div>
+</div>
+
+</div>
+
+ -->
+
+
+
+
+    </section>
+
+    <section class="programs-section" style="padding: 50px 0; background-color: #f9f9f9;">
+      <div class="container">
+        <h2 style="text-align: center; color: #0f5132; margin-bottom: 30px;">الدورات والبرامج</h2>
+    
+        <div class="slider-container" style="position: relative; overflow: hidden;">
+          <div class="slides-wrapper" style="display: flex; transition: transform 0.5s ease;">
+            {% for program in programs|slice:":5" %}
+              <div class="slide" style="flex: 0 0 100%; max-width: 100%; padding: 0 10px; box-sizing: border-box;">
+                <div class="card" style="box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); border-radius: 10px; overflow: hidden;">
+                  <img src="{{ program.image.url }}" alt="{{ program.title }}" style="width: 100%; height: 200px; object-fit: cover;">
+                  <div style="padding: 15px;">
+                    <p style="color: gray; font-size: 14px;"><i class="fa-solid fa-calendar-days"></i> {{ program.date|date:"d M Y" }}</p>
+                    <h3 style="margin: 10px 0;">{{ program.title }}</h3>
+                    <p>{{ program.description|truncatewords:20 }}</p>
+                    <p><strong>عدد الحلقات:</strong> {{ program.episode_count }}</p>
+                    {% if program.link %}
+                      <a href="{{ program.link }}" style="display: inline-block; margin-top: 10px; background-color: #0f5132; color: #fff; padding: 8px 16px; border-radius: 5px; text-decoration: none;">شاهد الحلقات</a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+    
+          <!-- أزرار التنقل -->
+          <button class="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: #ddd; border: none; padding: 10px; cursor: pointer;">&#10094;</button>
+          <button class="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: #ddd; border: none; padding: 10px; cursor: pointer;">&#10095;</button>
+        </div>
+      </div>
+    
+      <script>
+        const wrapper = document.querySelector('.slides-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+    
+        let index = 0;
+    
+        function showSlide(i) {
+          const slideWidth = slides[0].clientWidth + 20; // 20 = padding
+          wrapper.style.transform = `translateX(-${i * slideWidth}px)`;
+        }
+    
+        nextBtn.addEventListener('click', () => {
+          if (index < slides.length - 1) {
+            index++;
+            showSlide(index);
+          }
+        });
+    
+        prevBtn.addEventListener('click', () => {
+          if (index > 0) {
+            index--;
+            showSlide(index);
+          }
+        });
+    
+        // تشغيل تلقائي كل 6 ثواني
+        setInterval(() => {
+          index = (index + 1) % slides.length;
+          showSlide(index);
+        }, 6000);
+      </script>
+    </section>
+    
+    
+
+<!-- 00000000000000000000000000000000000000000000000000000000000 -->
+
+
+
+
+
+
+{% for program in programs %}
+<div class="col-xl-3 col-lg-3 col-sm-6">
+  <div class="card">
+    <img src="{{ program.image.url }}" class="card-img-top" alt="">
+    <div class="card-body">
+      <h4 class="card-title">{{ program.title }}</h4>
+      <p class="card-text">{{ program.description }}</p>
+      {% if program.link %}
+        <a href="{{ program.link }}" class="btn btn-primary" style="background-color: #0f5132;">شاهد حلقات البرنامج</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+
+<div class="latest-articles">
+ <h4 style="padding-bottom: 15px; display: flex; justify-content: center;">الدورات والبرامج</h4>
+
+ <!-- سلايدر Swiper -->
+ <div class="swiper mySwiper">
+   <div class="swiper-wrapper">
+     {% for article in latest_articles %}
+       <div class="swiper-slide">
+         <div class="card">
+           {% if article.image %}
+             <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+           {% endif %}
+           <div class="card-body">
+             <p class="date"><i class="fa-solid fa-calendar-days"></i><span>١٧ مارس ٢٠٢٥</span></p>
+             <h5 class="card-title">{{ article.title }}</h5>
+             <p class="card-text">{{ article.content|truncatewords:20 }}</p>
+             <a href="{% url 'article_detail' article.id %}" style="color: black; font-weight:400;">عرض المنشور></a>
+           </div>
+         </div>
+       </div>
+     {% endfor %}
+   </div>
+
+   <!-- أزرار التنقل -->
+   <div class="swiper-button-next"></div>
+   <div class="swiper-button-prev"></div>
+   <div style="position: absolute; top:412px;" class="swiper-pagination"></div>
+ </div>
+</div>
+
+
+
+
+
+    <!-- ====== الدورات والبرامج النهاية ====== -->
+
+
+
+
+
+
+
+
+<section>
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class=""></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19653d9ab25%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19653d9ab25%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.9140625%22%20y%3D%22217.7%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item active">
+          <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19653d9ab29%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19653d9ab29%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3125%22%20y%3D%22217.7%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_19653d9ab2b%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_19653d9ab2b%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22276.9921875%22%20y%3D%22217.7%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    
+<!-- السلايدر -->
+<!-- <section>
+ <div id="slider" class="carousel slide mt-4" data-bs-ride="carousel">
+  <div id="slid1" class="carousel-inner">
+    {% for slider in sliders %}
+      <div id="slid-item" class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img style="border-radius: 15px;" src="{{ slider.image.url }}" class="d-block w-100" alt="{{ slider.title }}">
+        <div style="width: 30%;" class="carousel-caption d-none d-md-block">
+          <h5>{{ slider.title }}</h5>
+          <p>{{ slider.description }}</p>
+          {% if slider.link %}
+            <a href="{{ slider.link }}" class="btn btn-primary">اقرأ المزيد</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">السابق</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">التالي</span>
+  </button>
+</div> 
+
+
+</section> -->
+
+
+<!-- قسم آخر الأخبار -->
+
+
+
+   <!-- ====== آخر الأخبار Start ====== -->
+<section id="latest-news" class="ud-news">
+  <div class="container">
+    <div style="padding: 5px; position: relative; bottom: 50px;">
+            
+      <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px; margin-top: 20px;"> اخبار  مركز الامام</h2>
+      <p style=" position: relative; right: 15px;">تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي.</p>
+      
+</div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ud-section-title mx-auto text-center">
+          
+          <div class="up-new" class="container">
+            <span style="position: relative; top: 10px; left: 300px; border-right: #510f0f 5px solid;">الخبــر</span>
+            <marquee behavior="" direction="left" style="background-color: #0f5132; color: aliceblue; padding: 10px; border-radius: 2%; font-size: 15px;">تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي</marquee>
+         
+
+          </div>
+          <p>تابع أحدث الأخبار والفعاليات في مؤسسة الإمام الإسلامي.</p>
+        </div>
+      </div>
+    </div>
+<!-- سليدر اخر الاخبار  البداية -->
+    <section class="news-slider" style="position: relative; direction: rtl; background: #fff; padding: 20px; margin: 30px auto; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); max-width: 1100px;">
+      <div class="slides-container" style="display: flex; overflow: hidden; position: relative;">
+        <!-- الشريحة 1 -->
+        <div class="slide active" style="display: flex; width: 100%; gap: 20px;">
+          <div class="news-box" style="flex: 1; background: #fafafa; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="/assets/images/صور سليد/صور سليدر (1).png" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="info" style="padding: 15px;">
+              <p style="color: gray;">16 أبريل، 2025</p>
+              <h3 style="color: #222;">شيخ الأزهر يعزي أ.د/ سيد بكري</h3>
+              <p style="color: #555;">بمزيد من الرضا بقضاء الله يتقدّم فضيلة الإمام الأكبر...</p>
+            </div>
+          </div>
+          <div class="news-box" style="flex: 1; background: #fafafa; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="/assets/images/صور سليد/صور سليدر (1).png" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="info" style="padding: 15px;">
+              <p style="color: gray;">16 أبريل، 2025</p>
+              <h3 style="color: #222;">اتفاق على تكثيف الضغط لإنهاء العدوان</h3>
+              <p style="color: #555;">في اجتماع مع علماء الأزهر الشريف...</p>
+            </div>
+          </div>
+        </div>
+        
+    
+        <!-- الشريحة 2 -->
+        <div class="slide" style="display: none; width: 100%; gap: 20px;">
+          <div class="news-box" style="flex: 1; background: #fafafa; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="/assets/images/صور سليد/صور سليدر (1).png" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="info" style="padding: 15px;">
+              <p style="color: gray;">17 أبريل، 2025</p>
+              <h3 style="color: #222;">افتتاح مركز تحفيظ جديد</h3>
+              <p style="color: #555;">أعلنت مؤسسة الإمام الإسلامي عن افتتاح مركز جديد لتحفيظ القرآن...</p>
+            </div>
+          </div>
+          <div class="news-box" style="flex: 1; background: #fafafa; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+            <img src="/assets/images/صور سليد/صور سليدر (1).png" style="width: 100%; height: 200px; object-fit: cover;">
+            <div class="info" style="padding: 15px;">
+              <p style="color: gray;">17 أبريل، 2025</p>
+              <h3 style="color: #222;">مؤتمر علماء الأمة</h3>
+              <p style="color: #555;">يُعقد المؤتمر الدولي لعلماء الأمة في القاهرة...</p>
+            </div>
+          </div>
+        </div>
+    
+        
+        <!-- الأسهم -->
+        <button class="prev" style="position: absolute; top: 50%; left: -15px; transform: translateY(-50%); background: #ddd; border: none; padding: 10px; cursor: pointer; font-size: 20px;">&#10094;</button>
+        <button class="next" style="position: absolute; top: 50%; right: -15px; transform: translateY(-50%); background: #ddd; border: none; padding: 10px; cursor: pointer; font-size: 20px;">&#10095;</button>
+      </div>
+    
+      <!-- النقاط (هتتولد تلقائي) -->
+      <div class="dots" style="text-align: center; margin-top: 15px;"></div>
+    
+      <!-- رابط المزيد -->
+      <a href="#" class="more-news" style="display: block; text-align: center; margin-top: 20px; padding: 10px; background: #eee; width: fit-content; margin-inline: auto; border-radius: 5px; text-decoration: none; color: #555;">المزيد من الأخبار</a>
+    </section>
+    
+    <script>
+      const slides = document.querySelectorAll(".slide");
+      const dotsContainer = document.querySelector(".dots");
+      let currentIndex = 0;
+    
+      // إنشاء النقاط تلقائيًا
+      slides.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        dot.style.cssText = "display: inline-block; width: 10px; height: 10px; background: #ccc; border-radius: 50%; margin: 5px; cursor: pointer;";
+        if (i === 0) {
+          dot.classList.add("active");
+          dot.style.background = "#666";
+        }
+        dot.addEventListener("click", () => {
+          currentIndex = i;
+          showSlide(currentIndex);
+        });
+        dotsContainer.appendChild(dot);
+      });
+    
+      const dots = document.querySelectorAll(".dot");
+    
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.display = i === index ? "flex" : "none";
+          dots[i].classList.toggle("active", i === index);
+          dots[i].style.background = i === index ? "#666" : "#ccc";
+        });
+      }
+    
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+      }
+    
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+      }
+    
+      document.querySelector(".next").addEventListener("click", nextSlide);
+      document.querySelector(".prev").addEventListener("click", prevSlide);
+    
+      setInterval(nextSlide, 5000); // تشغيل تلقائي كل 5 ثواني
+    </script>
+    
+    <!-- سليدر اخر الاخبار  النهاية -->
+
+
+   <div class="container">
+    <div class="row">
+      <div style="margin:auto; padding: 2px;" class="col-md-6 col-12">
+        <a href="#"><img src="/assets/images/0 (1).png" alt="ad"></a>
+      </div>
+      <div style="margin:auto; padding: 2px;" class="col-md-6 col-12">
+        <a href="#"><img src="/assets/images/0 (1).png" alt="ad"></a>
+      </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section> 
+<!-- ====== آخر الأخبار End ====== -->
+
+{%load static%}
+ <!-- كارت احدث المقالات -->
+
+ <!-- كارت احدث المقالات -->
+
+
+
+
+
+ 
+    <!-- ====== Pricing Start ====== -->
+    <section id="pricing" class="ud-pricing">
+      <div class="container">
+        <div style="padding: 5px; position: relative; bottom: 50px;">
+            
+              <h2 style="padding-bottom: 20px; border-right: #0f5132 solid 8px; padding-right: 4px;"> مدونة الامام</h2>
+              <p style=" position: relative; right: 15px;">ابق علي اطلاع باحدث المقالات والمستجدات في عالم التعليم</p>
+              
+        </div>
+
+
+
+        
+<!-- بداية السلايدر -->
+
+
+
+
+
+<div class="container">
+  <div class="card-wrapper">
+    <ul class="card-list">
+      <li class="card-item">
+        <a href="#" class="card-link">
+          <img src="/assets/images/blog/blog-02.jpg" alt="card-image" class="card-image">
+          <p class="badge">الامام الاسلامي</p>
+          <h3 class="card-title">الامام الاسلامي الامام الاسلامي  </h3>
+          <p>الوصف</p>
+          <a class="card-button" href="##">33</a>
+          <button class="card-button material-symbols-rounded">lll</button>
+        </a>
+    </ul>
+  </div>
+ </div> 
+
+
+
+
+ {% for program in programs %}
+ <div class="col-xl-3 col-lg-3 col-sm-6">
+   <div class="card">
+     <img src="{{ program.image.url }}" class="card-img-top" alt="">
+     <div class="card-body">
+       <h4 class="card-title">{{ program.title }}</h4>
+       <p class="card-text">{{ program.description }}</p>
+       {% if program.link %}
+         <a href="{{ program.link }}" class="btn btn-primary" style="background-color: #0f5132;">شاهد حلقات البرنامج</a>
+       {% endif %}
+     </div>
+   </div>
+ </div>
+{% endfor %}
+
+
+<div class="latest-articles">
+  <h4 style="padding-bottom: 15px; display: flex; justify-content: center;">أحدث الإضافات</h4>
+
+  <!-- سلايدر Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      {% for article in latest_articles %}
+        <div class="swiper-slide">
+          <div class="card">
+            {% if article.image %}
+              <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+            {% endif %}
+            <div class="card-body">
+              <p class="date"><i class="fa-solid fa-calendar-days"></i><span>١٧ مارس ٢٠٢٥</span></p>
+              <h5 class="card-title">{{ article.title }}</h5>
+              <p class="card-text">{{ article.content|truncatewords:20 }}</p>
+              <a href="{% url 'article_detail' article.id %}" style="color: black; font-weight:400;">عرض المنشور></a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- أزرار التنقل -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div style="position: absolute; top:412px;" class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+
+
+
+<style>
+
+
+
+
+
+
+  .swiper {
+    padding: 20px 0;
+  }
+
+  .swiper-slide .card {
+    height: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .swiper-slide img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffffff48;
+    
+    
+  }
+</style>
+
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // Responsive
+    breakpoints: {
+      992: { slidesPerView: 3 },
+      768: { slidesPerView: 2 },
+      0:   { slidesPerView: 1 },
+    }
+  });
+</script>
+
+
+
+<!-- main/templates/index.html -->
+<!-- <div class="latest-articles">
+  <h4 style="padding-bottom: 15px">احدث الاضافات</h4>
+  
+  <div id="card-blog" class="row">
+      {% for article in latest_articles %}
+          <div class="col-md-4">
+              <div class="card">
+                  {% if article.image %}
+                      <img src="{{ article.image.url }}" class="card-img-top" alt="{{ article.title }}">
+                  {% endif %}
+                  <div class="card-body">
+                    <p class="date"><i class="fa-solid fa-calendar-days"></i><span>١٧ مارس ٢٠٢٥</span></p>
+                      <h5 class="card-title">{{ article.title }}</h5>
+                      <p class="card-text">{{ article.content|truncatewords:20 }}</p>
+                      
+                      <a href="{% url 'article_detail' article.id %}" style="color: black; font-weight:400;">عرض المنشور></a>
+                  </div>
+              </div>
+          </div>
+      {% empty %}
+          <p>لا توجد مقالات حالياً لعرضها.</p>
+      {% endfor %}
+  </div>
+</div>
+
+ -->
+
+
+
+
+
+
+
+<!-- نهاية السليدر -->
+
+
+
+
+
+
+
+
+
+
+       
+        </div>
+      </div>
+    </section>
+    <!-- ====== Pricing End ====== -->
+
+    <!-- ====== Contact Start ====== -->
+    <section id="contact" class="ud-contact">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-xl-8 col-lg-7">
+            <div class="ud-contact-content-wrapper">
+              <div class="ud-contact-title">
+                <span>اتصل بنا</span>
+                <h2>
+                  دعونا نتحدث معا يسعدنا سماع رأيك!
+                </h2>
+                <p>يمكنك ارسال شكاوي عن طريق هذا النموذج</p>
+              </div>
+              <div class="ud-contact-info-wrapper">
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-map-marker"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>موقعنا الرئيسي</h5>
+                    <p>مركز الإمام الإسلامي
+                      قرية، غمازة الكبري، الصف، محافظة الجيزة 12819</p>
+                  </div>
+                </div>
+                <div class="ud-single-info">
+                  <div class="ud-info-icon">
+                    <i class="lni lni-envelope"></i>
+                  </div>
+                  <div class="ud-info-meta">
+                    <h5>كيف يمكننا المساعدة?</h5>
+                    <p>info@yourdomain.com</p>
+                    <p>contact@yourdomain.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div
+              class="ud-contact-form-wrapper wow fadeInUp"
+              data-wow-delay=".2s"
+            >
+              <h3 class="ud-contact-form-title">أرسل لنا رسالة</h3>
+              <form class="ud-contact-form">
+                <div class="ud-form-group">
+                  <label for="fullName">الاسم الكامل*</label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="يوسف ياسـ....."
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="email">بريد إلكتروني*</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="example@yourmail.com"
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="phone">هاتف*</label>
+                  <input
+                    type="text"
+                    name="phone"
+                    placeholder="+0123456789"
+                  />
+                </div>
+                <div class="ud-form-group">
+                  <label for="message">رسالة*</label>
+                  <textarea
+                    name="message"
+                    rows="1"
+                    placeholder="اكتب رسالتك هنا"
+                  ></textarea>
+                </div>
+                <div class="ud-form-group mb-0">
+                  <button style="border-radius: 20px;" type="submit" class="ud-main-btn">
+                    أرسل رسالة
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Contact End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+      <div class="shape shape-1">
+        <img style="opacity: .5;" src="/assets/images/footer/2.png" alt="shape" />
+      </div>
+      <div class="shape shape-2">
+        <img src="/assets/images/footer/shape-2.svg" alt="shape" />
+      </div>
+      <div class="shape shape-3">
+        <img src="/assets/images/footer/shape-3.svg" alt="shape" />
+      </div>
+      <div class="ud-footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="ud-widget">
+                <a href="index.html" class="ud-footer-logo">
+                  <img src="/assets/images/logo/لوجو (1).png" alt="logo" />
+                </a>
+                <p class="ud-widget-desc">
+                  "نحن نقدم تجارب تعليمية مبتكرة لتحفيظ القرآن الكريم
+                   باستخدام أحدث أساليب وتقنيات التعليم. من خلال دورات تعليمية تفاعلية، 
+                  نعمل على تطوير مهارات الحفظ والتلاوة لجميع الأعمار والمستويات."
+                </p>
+                <ul class="ud-widget-socials">
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-facebook-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/emam_eslamic">
+                      <i class="lni lni-twitter-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-instagram-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-linkedin-original"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div id="ff1" class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">معلومات عنا</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">الرئيسية</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">الفروع</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">عن الامام</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">شهادات</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            
+            <!-- <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">فروعنا</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">الفرع الرئيسي</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <!-- <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+               <h5 class="ud-widget-title">Our Products</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="ud-sss">
+              <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10 ">
+                <div class="ud-widget">
+                  <h5 class="ud-widget-title">الشركاء</h5>
+                  <ul class="ud-widget-brands">
+                    <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/فوتر (2).png"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/footer/brands/ecommerce-html.vg"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/footer/brands/graygrids.vg"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/footer/brands/فوتر (2).png"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li> -->
+                    <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/فوتر (2).png"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="###"
+                        rel="nofollow noopner"
+                        target="_blank"
+                      >
+                        <img
+                          src="/assets/images/footer/brands/فوتر (1).png"
+                          alt="Islamic Imam"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+            </div>
+
+
+<!-- 
+<div class="container" style="margin: auto; padding: 15px; text-align: center; max-width: 90%;">
+  <div class="row">
+    <div class="col=12 col-md-6 col-lg-3 mx-auto align-items-center justify-content-center">
+      
+     <div><h3>معلومات عنا</h3></div>
+     <div><a href="">الرئيسية</a></div>
+     <div><a href="">الفروع</a></div>
+     <div><a href="">عن الامام</a></div>
+     <div><a href="">شهادات</a></div>
+    </div>
+    <div class="col=12 col-md-6 col-lg-3 mx-auto align-items-center justify-content-center">
+  <div><h3>الشركاء</h3></div>
+  <div><img src="" alt="00000"></div>
+  <div><img src="" alt="00000"></div>
+  <div><img src="" alt="00000"></div>
+    </div>
+    <div class="col=12 col-md-6 col-lg-3 mx-auto align-items-center justify-content-center">
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">السرد</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+    </div>
+    <div class="col=12 col-md-6 col-lg-3 mx-auto align-items-center justify-content-center">
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">شهر رمضان</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+      <div class="btn-primary" style="border-radius: 10px; padding: 2px; font-size: 13px;">مسابقة الامام</div>
+    </div>
+  </div>
+</div> -->
+        
+      </div>
+      <div class="ud-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="ud-footer-bottom-left">
+                <li>
+                  <a href="javascript:void(0)">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">سياسة الدعم</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">شروط الخدمة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <p class="ud-footer-bottom-right">
+                Designed and Developed by
+                <a href="https://www.facebook.com/YoussefYassinAli" rel="nofollow">Youssef Yassin Ali</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+     <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+      // ==== for menu scroll
+      const pageLink = document.querySelectorAll(".ud-menu-scroll");
+
+      pageLink.forEach((elem) => {
+        elem.addEventListener("click", (e) => {
+          e.preventDefault();
+          document.querySelector(elem.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            offsetTop: 1 - 60,
+          });
+        });
+      });
+
+      // section menu active
+      function onScroll(event) {
+        const sections = document.querySelectorAll(".ud-menu-scroll");
+        const scrollPos =
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        for (let i = 0; i < sections.length; i++) {
+          const currLink = sections[i];
+          const val = currLink.getAttribute("href");
+          const refElement = document.querySelector(val);
+          const scrollTopMinus = scrollPos + 73;
+          if (
+            refElement.offsetTop <= scrollTopMinus &&
+            refElement.offsetTop + refElement.offsetHeight > scrollTopMinus
+          ) {
+            document
+              .querySelector(".ud-menu-scroll")
+              .classList.remove("active");
+            currLink.classList.add("active");
+          } else {
+            currLink.classList.remove("active");
+          }
+        }
+      }
+
+      window.document.addEventListener("scroll", onScroll);
+    </script>
+  </body>
+</html>

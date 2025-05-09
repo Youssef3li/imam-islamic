@@ -1,0 +1,131 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>{% block title %}الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي{% endblock %}</title>
+
+    <meta name="description" content="موقع الإمام الإسلامي يقدم لكم مقالات ودروس في الدين الإسلامي والتوجيهات الروحية. تابعنا للحصول على المعرفة القيمة." />
+    <meta name="keywords" content="علوم القران,الاحتفالات,القران الكريم,الإمام الإسلامي, دروس دينية, المعرفة الإسلامية, توجيه روحي, مقالات إسلامية" />
+
+    <!-- روابط ميتا -->
+    <meta name="title" content="الإمام الإسلامي">
+    <meta name="description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي">
+    <meta property="og:description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي">
+    <meta property="twitter:description" content="مؤسسة تعليمية متخصصة في تحفيظ القرآن الكريم وتعليم تلاوته بشكل صحيح. نقدم دورات ودروسًا لجميع الأعمار بمستويات مختلفة، مع معلمين أكفاء لتطوير مهارات الحفظ والتلاوة">
+
+    <!-- أيقونة الموقع -->
+    <link rel="shortcut icon" href="/assets/images/logo/icon.png" type="image/svg" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/lineicons.css" />
+    <link rel="stylesheet" href="/assets/css/ud-styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+
+  <body dir="rtl">
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="#home">
+                <img src="/assets/images/logo/لوجو (1).png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="{% url 'home' %}">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="{% url 'about' %}">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="{% url 'events' %}">الفعاليات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="{% url 'news' %}">آخر الأخبار</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="{% url 'contact' %}">تواصل معنا</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{% url 'student_services' %}">خدمات الطلاب</a>
+                  </li>
+
+                  <li class="nav-item nav-item-has-children">
+                    <a href="javascript:void(0)"> الصفحات </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'about' %}" class="ud-submenu-link">من نحن</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'apply' %}" class="ud-submenu-link">التقديم في المركز</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'contact' %}" class="ud-submenu-link">تواصل معنا</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'blog' %}" class="ud-submenu-link">المدونة</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'videos' %}" class="ud-submenu-link">فيديو</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'elearning' %}" class="ud-submenu-link">منصة التعليم الالكتروني</a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="{% url 'login' %}" class="ud-submenu-link">تسجيل الدخول</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a href="{% url 'login' %}">
+                  <img style="width: 30px; border-radius: 50%;" src="/assets/images/رمزية.png" alt="login">
+                </a>
+                <a href="{% url 'login' %}" class="ud-main-btn ud-login-btn">دخـول</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== أزرار جانبية ====== -->
+    <div class="ud-goo1">
+      <a id="bt2" href="{% url 'donate' %}">تبــرع <img src="/assets/images/linkedin_icon.png" alt=""></a>
+      <a id="bt3" href="{% url 'donate' %}">تطــوع <img src="/assets/images/linkedin_icon.png" alt=""></a>
+    </div>
+
+    <!-- ✅ هنا يروح المحتوى الخاص بكل صفحة -->
+    {% block content %}{% endblock %}
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>

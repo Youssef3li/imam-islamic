@@ -1,0 +1,581 @@
+<!-- =========
+
+	Template Name: موقع الامام الاسلامي
+	Author: يوسف ياسين عبد الرحيم
+	Author URI: https://www.facebook.com/YoussefYassinAli
+	Support: https://www.facebook.com/YoussefYassinAli
+	Version: 1.1
+
+========== -->
+
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الإمام الإسلامي | المعرفة الدينية والتوجيه الإسلامي</title>
+
+    <!--====== Favicon Icon ======-->
+    <link
+    rel="shortcut icon"
+    href="/assets/images/logo/icon.png"
+    type="image/svg"
+  />
+
+    <!-- ===== All CSS files ===== -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/css/animate.css" />
+    <link rel="stylesheet" href="/assets/css/lineicons.css" />
+    <link rel="stylesheet" href="/assets/css/ud-styles.css" />
+  </head>
+  <body dir="rtl">
+    <!-- ====== Header Start ====== -->
+    <header class="ud-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="home">
+                <img src="/assets/images/logo/لوجو (1).png" alt="Logo" />
+              </a>
+              <button class="navbar-toggler">
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+                <span class="toggler-icon"> </span>
+              </button>
+
+              <div class="navbar-collapse">
+                <ul id="nav" class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#home">الرئيسية</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#about">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#pricing">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#contact">تواصل معنا</a>
+                  </li>
+                  <li class="nav-item nav-item-has-children">
+                    <a href="javascript:void(0)"> الصفحات </a>
+                    <ul class="ud-submenu">
+                      <li class="ud-submenu-item">
+                        <a href="about.html" class="ud-submenu-link">
+                          صفحة من نحن
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="pricing.html" class="ud-submenu-link">
+                          Pricing Page
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="contact.html" class="ud-submenu-link">
+                          صفحة الاتصال
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="blog.html" class="ud-submenu-link">
+                          صفحة شبكة المدونة
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="blog-details.html" class="ud-submenu-link">
+                          صفحة تفاصيل المدونة
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="login.html" class="ud-submenu-link">
+                          صفحة تسجيل الدخول
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="404.html" class="ud-submenu-link">الصفحة 404</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="navbar-btn d-none d-sm-inline-block">
+                <a href="login.html" class="ud-main-btn ud-login-btn">
+                  تسجيل الدخول
+                </a>
+                <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
+                  تسجيل
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ====== Header End ====== -->
+
+    <!-- ====== Banner Start ====== -->
+    <section class="ud-page-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="ud-banner-content">
+              <h1>Blog Page</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Banner End ====== -->
+
+   <!-- ====== Blog Details Start ====== -->
+<section class="ud-blog-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="ud-blog-details-image">
+          <!-- عرض الصورة ديناميكيًا -->
+          <img src="{{ article.image.url }}" alt="blog details" />
+          <div class="ud-blog-overlay">
+            <div class="ud-blog-overlay-content">
+              <div class="ud-blog-author">
+                <!-- عرض صورة المؤلف والاسم ديناميكيًا -->
+                <img src="{{ article.author_image.url }} /assets/images/logo/icon.png" alt="author" />
+                <span>
+                  <!-- By --><a href="javascript:void(0)"> {{ article.author }}الامام الاسلامي </a> 
+                </span>
+              </div>
+
+              <div class="ud-blog-meta">
+                <p class="date">
+                  <i class="lni lni-calendar"></i> <span>{{ article.date }}</span>
+                </p>
+                <p class="comment">
+                  <i class="lni lni-comments"></i> <span>{{ article.comments_count }}</span>
+                </p>
+                <p class="view">
+                  <i class="lni lni-eye"></i> <span>{{ article.views_count }}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8">
+        <div class="ud-blog-details-content">
+          <!-- عنوان المقالة ديناميكيًا -->
+          <h2 class="ud-blog-details-title">{{ article.title }}</h2>
+          
+          <!-- محتوى المقالة ديناميكيًا -->
+          <p class="ud-blog-details-para">{{ article.content|safe }}</p>
+          
+          <!-- إضافة العناوين الفرعية مع المحتوى -->
+          {% for subheading, subcontent in article.subsections %}
+            <h3 class="ud-blog-details-subtitle">{{ subheading }}</h3>
+            <p class="ud-blog-details-para">{{ subcontent }}</p>
+          {% endfor %}
+          
+          <!-- اقتباس ديناميكي -->
+          <div class="ud-blog-quote">
+            <i class="lni lni-quotation"></i>
+            <p>{{ article.quote_text }}</p>
+            <h6>“{{ article.quote_author }}”</h6>
+          </div>
+          
+          <div class="ud-blog-details-action">
+            <ul class="ud-blog-tags">
+              {% for tag in article.tags %}
+                <li><a href="javascript:void(0)">{{ tag }}</a></li>
+              {% endfor %}
+            </ul>
+            <div class="ud-blog-share">
+              <h6>Share This Post</h6>
+              <ul class="ud-blog-share-links">
+                <li>
+                  <a href="javascript:void(0)" class="facebook">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="twitter">
+                    <i class="lni lni-twitter-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="linkedin">
+                    <i class="lni lni-linkedin-original"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="ud-blog-sidebar">
+          <div class="ud-newsletter-box">
+            <img src="/assets/images/blog/dotted-shape.svg" alt="shape" class="shape shape-1" />
+            <img src="/assets/images/blog/dotted-shape.svg" alt="shape" class="shape shape-2" />
+            <h3 class="ud-newsletter-title">Join our newsletter!</h3>
+            <p>Enter your email to receive our latest newsletter.</p>
+            <form class="ud-newsletter-form">
+              <input type="email" name="email" placeholder="Your Email address" />
+              <button class="ud-main-btn">Subscribe Now</button>
+              <p class="ud-newsletter-note">Don't worry, we don't spam</p>
+            </form>
+          </div>
+
+          <div class="ud-articles-box">
+            <h3 class="ud-articles-box-title">Popular Articles</h3>
+            <ul class="ud-articles-list">
+              {% for related_article in related_articles %}
+                <li>
+                  <div class="ud-article-image">
+                    <img src="{{ related_article.image.url }}" alt="author" />
+                  </div>
+                  <div class="ud-article-content">
+                    <h5 class="ud-article-title">
+                      <a href="{% url 'article_detail' related_article.id %}">
+                        {{ related_article.title }}
+                      </a>
+                    </h5>
+                    <p class="ud-article-author">{{ related_article.author }}</p>
+                  </div>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <div class="ud-banner-ad">
+            <a href="javascript:void(0)">
+              <img src="/assets/images/blog/bannder-ad.png" alt="ad banner" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Blog Details End ====== -->
+
+    <!-- ====== Blog Start ====== -->
+    <section class="ud-blog-grids ud-related-articles">
+      <div class="container">
+        <div class="row col-lg-12">
+          <div class="ud-related-title">
+            <h2 class="ud-related-articles-title">Related Articles</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="ud-single-blog">
+              <div class="ud-blog-image">
+                <a href="blog-details.html">
+                  <img src="/assets/images/blog/blog-01.jpg" alt="blog" />
+                </a>
+              </div>
+              <div class="ud-blog-content">
+                <span class="ud-blog-date">Dec 22, 2023</span>
+                <h3 class="ud-blog-title">
+                  <a href="blog-details.html">
+                    Meet AutoManage, the best AI management tools
+                  </a>
+                </h3>
+                <p class="ud-blog-desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="ud-single-blog">
+              <div class="ud-blog-image">
+                <a href="blog-details.html">
+                  <img src="/assets/images/blog/blog-02.jpg" alt="blog" />
+                </a>
+              </div>
+              <div class="ud-blog-content">
+                <span class="ud-blog-date">Dec 22, 2023</span>
+                <h3 class="ud-blog-title">
+                  <a href="blog-details.html">
+                    How to earn more money as a wellness coach
+                  </a>
+                </h3>
+                <p class="ud-blog-desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="ud-single-blog">
+              <div class="ud-blog-image">
+                <a href="blog-details.html">
+                  <img src="/assets/images/blog/blog-03.jpg" alt="blog" />
+                </a>
+              </div>
+              <div class="ud-blog-content">
+                <span class="ud-blog-date">Dec 22, 2023</span>
+                <h3 class="ud-blog-title">
+                  <a href="blog-details.html">
+                    The no-fuss guide to upselling and cross selling
+                  </a>
+                </h3>
+                <p class="ud-blog-desc">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== Blog End ====== -->
+
+    <!-- ====== Footer Start ====== -->
+    <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
+      <div class="shape shape-1">
+        <img src="/assets/images/footer/shape-1.svg" alt="shape" />
+      </div>
+      <div class="shape shape-2">
+        <img src="/assets/images/footer/shape-2.svg" alt="shape" />
+      </div>
+      <div class="shape shape-3">
+        <img src="/assets/images/footer/shape-3.svg" alt="shape" />
+      </div>
+      <div class="ud-footer-widgets">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6">
+              <div class="ud-widget">
+                <a href="home.html" class="ud-footer-logo">
+                  <img src="/assets/images/logo/لوجو (1).png" alt="logo" />
+                </a>
+                <p class="ud-widget-desc">
+                  "نحن نقدم تجارب تعليمية مبتكرة لتحفيظ القرآن الكريم
+                   باستخدام أحدث أساليب وتقنيات التعليم. من خلال دورات تعليمية تفاعلية، 
+                  نعمل على تطوير مهارات الحفظ والتلاوة لجميع الأعمار والمستويات."
+                </p>
+                <ul class="ud-widget-socials">
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-facebook-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/emam_eslamic">
+                      <i class="lni lni-twitter-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-instagram-filled"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/emam.eslamic">
+                      <i class="lni lni-linkedin-original"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">معلومات عنا</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">الرئيسية</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">الفروع</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">عن الامام</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">شهادات</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">فروعنا</h5>
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">الفرع الرئيسي</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+              <div class="ud-widget">
+                <!-- <h5 class="ud-widget-title">Our Products</h5> -->
+                <ul class="ud-widget-links">
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0)">فرع /////</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-md-8 col-sm-10">
+              <div class="ud-widget">
+                <h5 class="ud-widget-title">الشركاء</h5>
+                <ul class="ud-widget-brands">
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/ayroui.vg"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/ecommerce-html.vg"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/graygrids.vg"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/فوتر (2).png"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/uideck.vg"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="###"
+                      rel="nofollow noopner"
+                      target="_blank"
+                    >
+                      <img
+                        src="/assets/images/footer/brands/فوتر (1).png"
+                        alt="Islamic Imam"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ud-footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <ul class="ud-footer-bottom-left">
+                <li>
+                  <a href="javascript:void(0)">سياسة الخصوصية</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">سياسة الدعم</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">شروط الخدمة</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <p class="ud-footer-bottom-right">
+                Designed and Developed by
+                <a href="https://www.facebook.com/YoussefYassinAli" rel="nofollow">Youssef Yassin Ali</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ====== Footer End ====== -->
+
+    <!-- ====== Back To Top Start ====== -->
+    <a href="javascript:void(0)" class="back-to-top">
+      <i class="lni lni-chevron-up"> </i>
+    </a>
+    <!-- ====== Back To Top End ====== -->
+
+    <!-- ====== All Javascript Files ====== -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/wow.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>

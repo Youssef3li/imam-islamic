@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- course_detail.html -->
+<section class="course-detail">
+  <div class="container">
+    <h1>{{ course.title }}</h1>
+    <p>{{ course.description }}</p>
+    <ul>
+      {% for episode in episodes %}
+        <li>
+          <h4>{{ episode.title }}</h4>
+          <a href="{{ episode.video_url }}">مشاهدة الحلقة</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+</body>
+</html>

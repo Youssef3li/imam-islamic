@@ -1,0 +1,11 @@
+<h1>فعاليات المؤسسة</h1>
+{% for event in events %}
+    <div>
+        <h2>{{ event.title }}</h2>
+        <p>{{ event.description }}</p>
+        <p><strong>التاريخ:</strong> {{ event.date }}</p>
+        {% if event.image %}
+            <img src="{{ event.image.url }}" alt="{{ event.title }}" width="300">
+        {% endif %}
+    </div>
+{% endfor %}
